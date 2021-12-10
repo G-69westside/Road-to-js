@@ -271,4 +271,6 @@ function Circle(radius) {
     console.log("draw");
   };
 }
-const circle = new Circle(1); 
+const circle = new Circle(1);
+
+//Dynamic Nature of objects
