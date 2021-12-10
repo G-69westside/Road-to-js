@@ -244,9 +244,10 @@
 
 //Factory Functions
 //Factory functions produce objects
+//We use camel Noatation : oneTwoThreeFour-->Second letter is always uppercase
 
 function createCircle(radius, location) {
-  const circle = {
+  return {
     radius,
     location: {
       x: 2,
@@ -257,8 +258,17 @@ function createCircle(radius, location) {
     },
     //You can also add boolean values
   };
-  return circle;
 }
 const circle1 = createCircle(1);
 console.log(circle1);
-//
+
+//CONSTRUCTOR FUNCTIONS
+//We use pascal Notation The first letter of every word should be uppercase
+
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+}
+const circle = new Circle(1); 
