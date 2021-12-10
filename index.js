@@ -186,25 +186,25 @@
 // 5 -> 1point
 //Math.floor(1.3)
 //12 points -> suspended
-checkSpeec(80);
-function checkSpeec(speed) {
-  const speedLimit = 70;
-  const kmPerPoint = 5;
-  const maxPoints = 12;
-  if (speed < speedLimit + kmPerPoint) console.log("OK!");
-  else {
-    const points = Math.floor((speed - speedLimit) / kmPerPoint);
-    if (points >= maxPoints) console.log("License Suspended");
-    else console.log("Points", points);
-  }
-}
-showNumbers(10);
-function showNumbers(numberLimit) {
-  for (let i = 0; i <= numberLimit; i++) {
-    if (i % 2 === 0) console.log(i, "EVEN");
-    else console.log(i, "ODD");
-  }
-}
+// checkSpeec(80);
+// function checkSpeec(speed) {
+//   const speedLimit = 70;
+//   const kmPerPoint = 5;
+//   const maxPoints = 12;
+//   if (speed < speedLimit + kmPerPoint) console.log("OK!");
+//   else {
+//     const points = Math.floor((speed - speedLimit) / kmPerPoint);
+//     if (points >= maxPoints) console.log("License Suspended");
+//     else console.log("Points", points);
+//   }
+// }
+// showNumbers(10);
+// function showNumbers(numberLimit) {
+//   for (let i = 0; i <= numberLimit; i++) {
+//     if (i % 2 === 0) console.log(i, "EVEN");
+//     else console.log(i, "ODD");
+//   }
+// }
 
 //Falsy values
 //undefined
@@ -217,12 +217,26 @@ function showNumbers(numberLimit) {
 //OBJECT ORIENTED PROGRAMMING(OOP)
 
 //fACTORY FUNCTIONS
-function createCircle(radius) {
-  return {
-    radius: radius,
+// function createCircle(radius) {
+//   return {
+//     radius: radius,
 
-    draw: function () {
-      console.log("draw");
-    },
-  };
-}
+//     draw: function () {
+//       console.log("draw");
+//     },
+//   };
+// }
+
+const circle = {
+  radius: 1,
+  location: {
+    x: 2,
+    y: 3,
+  },
+  draw: function () {
+    console.log("draw");
+  },
+  //You can also add boolean values
+  isVisible: true,
+};
+circle.location();
