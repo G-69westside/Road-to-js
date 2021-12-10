@@ -226,17 +226,39 @@
 //     },
 //   };
 // }
+//Take note of the syntax
+// if a function is part of an object, we call it a method
+// const circle = {
+//   radius: 1,
+//   location: {
+//     x: 2,
+//     y: 3,
+//   },
+//   draw: function () {
+//     console.log("draw");
+//   },
+//   //You can also add boolean values
+//   isVisible: true,
+// };
+// circle.location();
 
-const circle = {
-  radius: 1,
-  location: {
-    x: 2,
-    y: 3,
-  },
-  draw: function () {
-    console.log("draw");
-  },
-  //You can also add boolean values
-  isVisible: true,
-};
-circle.location();
+//Factory Functions
+//Factory functions produce objects
+
+function createCircle(radius, location) {
+  const circle = {
+    radius,
+    location: {
+      x: 2,
+      y: 3,
+    },
+    draw() {
+      console.log("draw");
+    },
+    //You can also add boolean values
+  };
+  return circle;
+}
+const circle1 = createCircle(1);
+console.log(circle1);
+//
