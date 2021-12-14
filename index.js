@@ -277,7 +277,6 @@
 //CONSTRUCTOR PROPERTIES
 //every object has a property called constructor and it references the functiom that was used to construct / create that object
 
-
 // Another thing, Functions are also objects
 
 // remember Circle.call({},1)
@@ -285,7 +284,19 @@
 
 //Value types vs reference types
 
-
 // Value types are :Number,String,Boolean, Symbol,undefined,null
 // Reference types are:Object, Function, Array
- 
+
+let number = 10;
+function increase(number) {
+  number++;
+}
+increase(number);
+console.log(number);
+
+let number = 10;
+function increase() {
+  number++;
+}
+increase(number);
+console.log(number);
