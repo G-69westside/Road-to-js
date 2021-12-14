@@ -264,15 +264,28 @@
 //Dynamic Nature of objects
 //every object in javascript has a property called constructor , and that references the function that was used to construct or create that object
 
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function () {
-    console.log("draw");
-  };
-  // return this;
-}
-const another = new Circle(1);
-console.log(another);
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log("draw");
+//   };
+//   // return this;
+// }
+// const another = new Circle(1);
+// console.log(another);
 
 //CONSTRUCTOR PROPERTIES
 //every object has a property called constructor and it references the functiom that was used to construct / create that object
+
+
+// Another thing, Functions are also objects
+
+// remember Circle.call({},1)
+// also remember Circle.apply({},[1,2])
+
+//Value types vs reference types
+
+
+// Value types are :Number,String,Boolean, Symbol,undefined,null
+// Reference types are:Object, Function, Array
+ 
