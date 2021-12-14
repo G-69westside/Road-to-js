@@ -249,30 +249,17 @@
 function createCircle(radius, location) {
   return {
     radius,
-    location: {
-      x: 2,
-      y: 3,
-    },
+    location,
     draw() {
       console.log("draw");
     },
     //You can also add boolean values
   };
 }
-const circle1 = createCircle(1);
+const circle1 = createCircle("", "");
+// on this line we have created a new variable circle1 and assigned the values of function createcircle and given the radius parameter of 1
 console.log(circle1);
-
 //CONSTRUCTOR FUNCTIONS
 //We use pascal Notation The first letter of every word should be uppercase
-
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function () {
-    console.log("draw");
-  };
-}
-const circle = new Circle(1);
-
 //Dynamic Nature of objects
-
 //every object in javascript has a property called constructor , and that references the function that was used to construct or create that object
