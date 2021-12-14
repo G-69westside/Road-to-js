@@ -246,20 +246,33 @@
 //Factory functions produce objects
 //We use camel Noatation : oneTwoThreeFour-->Second letter is always uppercase
 
-function createCircle(radius, location) {
-  return {
-    radius,
-    location,
-    draw() {
-      console.log("draw");
-    },
-    //You can also add boolean values
-  };
-}
-const circle1 = createCircle("", "");
-// on this line we have created a new variable circle1 and assigned the values of function createcircle and given the radius parameter of 1
-console.log(circle1);
+// function createCircle(radius, sportsgame) {
+//   return {
+//     radius,
+//     sportsgame,
+//     draw() {
+//       console.log("draw");
+//     },
+//     //You can also add boolean values
+//   };
+// }
+// const circle1 = createCircle(1, "NBA");
+// // on this line we have created a new variable circle1 and assigned the values of function createcircle and given the radius parameter of 1
+// console.log(circle1);
 //CONSTRUCTOR FUNCTIONS
 //We use pascal Notation The first letter of every word should be uppercase
 //Dynamic Nature of objects
 //every object in javascript has a property called constructor , and that references the function that was used to construct or create that object
+
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function () {
+    console.log("draw");
+  };
+  // return this;
+}
+const another = new Circle(1);
+console.log(another);
+
+//CONSTRUCTOR PROPERTIES
+//every object has a property called constructor and it references the functiom that was used to construct / create that object
