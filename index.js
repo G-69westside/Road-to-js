@@ -325,3 +325,4 @@
 
 //Garbage collector
 //Allocation and deallocation of memory that is not used
+//went over math and string properties
