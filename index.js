@@ -287,16 +287,38 @@
 // Value types are :Number,String,Boolean, Symbol,undefined,null
 // Reference types are:Object, Function, Array
 
-let number = 10;
-function increase(number) {
-  number++;
-}
-increase(number);
-console.log(number);
+// let number = 10;
+// function increase(number) {
+//   number++;
+// }
+// increase(number);
+// console.log(number);
 
-let number = 10;
-function increase() {
-  number++;
-}
-increase(number);
-console.log(number);
+// let number = 10;
+// function increase() {
+//   number++;
+// }
+// increase(number);
+// console.log(number);
+
+const circle = {
+  radius: 1,
+  draw() {
+    console.log("draw");
+  },
+};
+for (let key in circle) console.log(key, ":", circle[key]);
+if ("radius" in circle) console.log("YES");
+
+//cloning an object
+const another = {};
+for (let key in circle) another[key] = circle[key];
+
+//but this method is old and updated so we will use another shorter one
+
+const another1 = Object.assign({}, circle);
+console.log(another1);
+
+// even a more simpler method for cloning an object is:
+const another2 = { ...circle };
+console.log(another2);
