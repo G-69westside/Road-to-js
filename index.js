@@ -390,16 +390,29 @@
 // let address = new CreateAddress("koinange", "Nairobi", "90200");
 // console.table(address);
 
-function CreateAddress(street, city, zipcode) {
-  this.street = street;
-  this.city = city;
-  this.zipcode = zipcode;
-}
-let address1 = new CreateAddress("koinange", "Nairobi", "90200");
-let address2 = new CreateAddress("koinange", "Nairobi", "90200");
-function areEqual(address1, address2) {
-  return address1 === address2;
-}
-console.log(areEqual(address1, address2));
+// function CreateAddress(street, city, zipcode) {
+//   this.street = street;
+//   this.city = city;
+//   this.zipcode = zipcode;
+// }
+// let address1 = new CreateAddress("koinange", "Nairobi", "90200");
+// let address2 = new CreateAddress("koinange", "Nairobi", "90200");
+// function areEqual(address1, address2) {
+//   return address1 === address2;
+// }
+// console.log(areEqual(address1, address2));
 
-This returns False since the memory allocation is different 
+// This returns False since the memory allocation is different
+//Object blog post
+const post = {
+  title: "Matrix",
+  body: "Action",
+  author: "Smith",
+  views: 1000,
+  comments: [
+    { author: "Smith", body: "Action" },
+    { author: "Smith", body: "Action" },
+  ],
+  isLive: true,
+};
+console.log(post);
