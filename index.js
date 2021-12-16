@@ -404,6 +404,7 @@
 
 // This returns False since the memory allocation is different
 //Object blog post
+//Price Range Object
 const post = {
   title: "Matrix",
   body: "Action",
@@ -416,3 +417,11 @@ const post = {
   isLive: true,
 };
 console.log(post);
+
+const priceRanges = [
+  { label: "$", tooltip: "inexpensive", minPerPerson: 0, maxPerPerson: 10 },
+  { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
+  { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
+];
+
+let restaurants = [{ averagePerPerson: 5 }];
