@@ -359,15 +359,33 @@
 // console.log(now)
 // we also have get and set methods
 
+// Exercise 1 :
+// const address = {
+//   street: "Pewa Street",
+//   city: "Nairobi",
+//   zipcode: 90200,
+// };
+// function showAddress(address) {
+//   for (let key in address) console.log(key, ":", address[key]);
+//   return showAddress;
+// }
+// showAddress(address);
 
-Exercise 1 :
-const address = {
-  street: "Pewa Street",
-  city: "Nairobi",
-  zipcode: 90200,
-};
-function showAddress(address) {
-  for (let key in address) console.log(key, ":", address[key]);
-  return showAddress;
+
+exercise2
+let address = createAddress("a", "b", "c");
+console.log(address);
+//Factory Function
+function createAddress(street, city, zipcode) {
+  return {
+    street,
+    city,
+    zipcode,
+  };
 }
-showAddress(address);
+//constructor function
+function Address(street, city, zipcode) {
+  this.street = street;
+  this.city = city;
+  this.zipcode = zipcode;
+}
