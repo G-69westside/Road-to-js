@@ -327,8 +327,29 @@
 //Allocation and deallocation of memory that is not used
 //went over math and string properties
 
-//String primitive
-const message = "hi";
+// //String primitive
+// const message = "hi";
 
-const another = new String("hi");
-console.log(message.length); 
+// const another = new String("hi");
+// console.log(message.length);
+
+//Template Literals
+//lets recap:
+//Object {}
+//Boolean true , false,
+//String '' , ""
+//then, Template literals ``
+const another = `This is my
+ 'first' message`;
+console.log(another);
+//This will appear exactly as it is when logged into the console
+We can also add placeholders 
+
+example:
+const user = "John";
+const message = `Hi ${user}--->This is the placeholder and you can add expreesion that returns a value or you can even call a function
+Thankyou for joining our mail list
+Regards,
+Tony`;
+console.log(message)
+
