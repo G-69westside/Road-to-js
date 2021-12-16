@@ -405,23 +405,33 @@
 // This returns False since the memory allocation is different
 //Object blog post
 //Price Range Object
-const post = {
-  title: "Matrix",
-  body: "Action",
-  author: "Smith",
-  views: 1000,
-  comments: [
-    { author: "Smith", body: "Action" },
-    { author: "Smith", body: "Action" },
-  ],
-  isLive: true,
-};
-console.log(post);
+// const post = {
+//   title: "Matrix",
+//   body: "Action",
+//   author: "Smith",
+//   views: 1000,
+//   comments: [
+//     { author: "Smith", body: "Action" },
+//     { author: "Smith", body: "Action" },
+//   ],
+//   isLive: true,
+// };
+// console.log(post);
 
-const priceRanges = [
-  { label: "$", tooltip: "inexpensive", minPerPerson: 0, maxPerPerson: 10 },
-  { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
-  { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
-];
+// const priceRanges = [
+//   { label: "$", tooltip: "inexpensive", minPerPerson: 0, maxPerPerson: 10 },
+//   { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
+//   { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
+// ];
 
-let restaurants = [{ averagePerPerson: 5 }];
+// let restaurants = [{ averagePerPerson: 5 }];
+
+const numbers = [3, 4];
+numbers.push(1, 2, 3);
+numbers.unshift(6, 5, 7);
+numbers.splice(4, 0, "c", "e", "f");
+console.log(numbers);
+// we start by adding numbers at an array:
+// At the end you use numbers.push(),
+//At the beginning you use unshift,
+//also for splice ..
