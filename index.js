@@ -371,15 +371,15 @@
 // }
 // showAddress(address);
 
-function createAddress(street, city, zipcode) {
-  return {
-    street,
-    city,
-    zipcode,
-  };
-}
-let address = createAddress("pewaStreet", "Nairobi", 90200);
-console.log(address);
+// function createAddress(street, city, zipcode) {
+//   return {
+//     street,
+//     city,
+//     zipcode,
+//   };
+// }
+// let address = createAddress("pewaStreet", "Nairobi", 90200);
+// console.log(address);
 
 // function CreateAddress(street, city, zipcode) {
 //   this.street = street;
@@ -389,3 +389,17 @@ console.log(address);
 
 // let address = new CreateAddress("koinange", "Nairobi", "90200");
 // console.table(address);
+
+function CreateAddress(street, city, zipcode) {
+  this.street = street;
+  this.city = city;
+  this.zipcode = zipcode;
+}
+let address1 = new CreateAddress("koinange", "Nairobi", "90200");
+let address2 = new CreateAddress("koinange", "Nairobi", "90200");
+function areEqual(address1, address2) {
+  return address1 === address2;
+}
+console.log(areEqual(address1, address2));
+
+This returns False since the memory allocation is different 
