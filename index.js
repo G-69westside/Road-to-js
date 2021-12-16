@@ -326,3 +326,9 @@
 //Garbage collector
 //Allocation and deallocation of memory that is not used
 //went over math and string properties
+
+//String primitive
+const message = "hi";
+
+const another = new String("hi");
+console.log(message.length); 
