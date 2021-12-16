@@ -339,17 +339,22 @@
 //Boolean true , false,
 //String '' , ""
 //then, Template literals ``
-const another = `This is my
- 'first' message`;
-console.log(another);
-//This will appear exactly as it is when logged into the console
-We can also add placeholders 
+// const another = `This is my
+//  'first' message`;
+// console.log(another);
+// //This will appear exactly as it is when logged into the console
+// We can also add placeholders
 
-example:
-const user = "John";
-const message = `Hi ${user}--->This is the placeholder and you can add expreesion that returns a value or you can even call a function
-Thankyou for joining our mail list
-Regards,
-Tony`;
-console.log(message)
+// example:
+// const user = "John";
+// const message = `Hi ${user}--->This is the placeholder and you can add expreesion that returns a value or you can even call a function
+// Thankyou for joining our mail list
+// Regards,
+// Tony`;
+// console.log(message);
 
+
+const now = new Date(0)
+
+console.log(now)
+we also have get and set methods
