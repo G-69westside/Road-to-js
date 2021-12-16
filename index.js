@@ -353,8 +353,21 @@
 // Tony`;
 // console.log(message);
 
+//Date Objects
+// const now = new Date(0)
 
-const now = new Date(0)
+// console.log(now)
+// we also have get and set methods
 
-console.log(now)
-we also have get and set methods
+
+Exercise 1 :
+const address = {
+  street: "Pewa Street",
+  city: "Nairobi",
+  zipcode: 90200,
+};
+function showAddress(address) {
+  for (let key in address) console.log(key, ":", address[key]);
+  return showAddress;
+}
+showAddress(address);
