@@ -371,21 +371,23 @@
 // }
 // showAddress(address);
 
+// Factory Function
 
-exercise2
-let address = createAddress("a", "b", "c");
-console.log(address);
-//Factory Function
-function createAddress(street, city, zipcode) {
-  return {
-    street,
-    city,
-    zipcode,
-  };
-}
-//constructor function
-function Address(street, city, zipcode) {
+// function createAddress(street, city, zipcode) {
+//   return {
+//     street,
+//     city,
+//     zipcode,
+//   };
+// }
+// let address = createAddress("pewaStreet", "Nairobi", 90200);
+// console.log(address);
+
+function CreateAddress(street, city, zipcode) {
   this.street = street;
   this.city = city;
   this.zipcode = zipcode;
 }
+
+let address = new CreateAddress("koinange", "Nairobi", "90200");
+console.table(address);
