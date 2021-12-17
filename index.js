@@ -426,12 +426,23 @@
 
 // let restaurants = [{ averagePerPerson: 5 }];
 
-const numbers = [3, 4];
-numbers.push(1, 2, 3);
-numbers.unshift(6, 5, 7);
-numbers.splice(4, 0, "c", "e", "f");
-console.log(numbers);
+// const numbers = [3, 4];
+// numbers.push(1, 2, 3);
+// numbers.unshift(6, 5, 7);
+// numbers.splice(4, 0, "c", "e", "f");
+// console.log(numbers);
 // we start by adding numbers at an array:
 // At the end you use numbers.push(),
 //At the beginning you use unshift,
 //also for splice ..
+
+//Finding elements in an array
+//We use .index0f() to see the index of the item we want to find
+
+const numbers = [1, 2, 3, 4];
+numbers.indexOf(1);
+console.log(numbers.indexOf(8));
+//This gives the output as (-1 ) since this item is not available
+// Look at these one:
+console.log(numbers.includes(1)); //returns true,
+//This checks if this item is available and returns true if availbale, otherwise,false
