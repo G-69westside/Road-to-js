@@ -447,21 +447,21 @@
 // console.log(numbers.includes(1)); //returns true,
 // //This checks if this item is available and returns true if availbale, otherwise,false
 
- const courses = [
-   { id: 1, name: "Ben" },
-  { id: 3, name: "Bensss" },
-];
+//  const courses = [
+//    { id: 1, name: "Ben" },
+//   { id: 3, name: "Bensss" },
+// ];
 
-console.log(courses.includes({ id: 1, name: "Ben" }));
-//This returns false since these two objects target different reference points in memory
+// console.log(courses.includes({ id: 1, name: "Ben" }));
+// //This returns false since these two objects target different reference points in memory
 
-//Now lets look at this code below:
-var array = [5, 12, 8, 130, 44];
-var found = array.find(function (element) {
- return element > 10;
-});
- console.log(found);
-//This applies to object literals eg below:
+// //Now lets look at this code below:
+// var array = [5, 12, 8, 130, 44];
+// var found = array.find(function (element) {
+//  return element > 10;
+// });
+//  console.log(found);
+// //This applies to object literals eg below:
 
 const courses = [
   { id: 1, name: "Ben" },
@@ -471,3 +471,5 @@ const found = courses.find(function (element) {
   return courses.name != "Ben";
 });
 console.log(found);
+
+let isPositive = (number) => number >= 0;
