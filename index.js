@@ -463,16 +463,19 @@
 //  console.log(found);
 // //This applies to object literals eg below:
 
-const courses = [
-  { id: 1, name: "Ben" },
-  { id: 3, name: "Bensss" },
-];
-const found = courses.find(function (element) {
-  return courses.name != "Ben";
-});
-console.log(found);
+// const courses = [
+//   { id: 1, name: "Ben" },
+//   { id: 3, name: "Bensss" },
+// ];
+// const found = courses.find(function (element) {
+//   return courses.name != "Ben";
+// });
+// console.log(found);
 
-let isPositive = (number) => number >= 0;
+// let isPositive = (number) => number >= 0;
 
 //BrB Sturday Break
 
+document.getElementById("page-banner");
+//This grabs this element
+let banner = document.getElementById("page-banner");
