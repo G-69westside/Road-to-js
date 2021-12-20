@@ -492,17 +492,36 @@
 //   console.log(item);
 // });
 
-//Now we look at Querying the document
-const wrap = document.querySelector("#wrapper");
-console.log(wrap);
-const wmf = document.querySelector("#book-list li:nth-child(2) .name");
-console.log(wmf);
+// //Now we look at Querying the document
+// const wrap = document.querySelector("#wrapper");
+// console.log(wrap);
+// const wmf = document.querySelector("#book-list li:nth-child(2) .name");
+// console.log(wmf);
 
-//Now we look at the selectorAll for when we have a list of more than 1 element to be chosen
+// //Now we look at the selectorAll for when we have a list of more than 1 element to be chosen
+// let books = document.querySelectorAll("#book-list li .name");
+// console.log(books);
+
+// let books1 = Array.from(books);
+// books1.forEach(function (item) {
+//   console.log(item);
+// });
+
+
+
+
+//Changing Text and HTML Content
 let books = document.querySelectorAll("#book-list li .name");
-console.log(books);
-
-let books1 = Array.from(books);
-books1.forEach(function (item) {
-  console.log(item);
+Array.from(books).forEach(function (book) {
+  book.textContent += "test";
+  //This code must run from this loop
+  //Also, we can append (write next to) the already existing text
+  // and this can be done by book.textContent += "(test)";
 });
+//This literally grabs the textcontent
+//As you can see, we have changed variable books to an array but that is not neccessary, we can still work with it without changing into an array since the output will be a nodeList
+
+const bookList = document.querySelector("#book-list");
+console.log(bookList.innerHTML);
+bookList.innerHTML = "<h1>Books and more books</h1>";
+bookList.innerHTML += "<p>This is how you add HTML </P>";
