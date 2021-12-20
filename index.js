@@ -480,15 +480,29 @@
 // //This grabs this element
 // let banner = document.getElementById("page-banner");
 
-let titles = document.getElementsByClassName("title");
+// let titles = document.getElementsByClassName("title");
 
-//We then turn this variable titles to arrays as ashown below
+// //We then turn this variable titles to arrays as ashown below
 
-let arr = Array.from(titles);
-console.log(arr);
+// let arr = Array.from(titles);
+// console.log(arr);
 
-//So now arr is now an array
-arr.forEach(function (item) {
+// //So now arr is now an array
+// arr.forEach(function (item) {
+//   console.log(item);
+// });
+
+//Now we look at Querying the document
+const wrap = document.querySelector("#wrapper");
+console.log(wrap);
+const wmf = document.querySelector("#book-list li:nth-child(2) .name");
+console.log(wmf);
+
+//Now we look at the selectorAll for when we have a list of more than 1 element to be chosen
+let books = document.querySelectorAll("#book-list li .name");
+console.log(books);
+
+let books1 = Array.from(books);
+books1.forEach(function (item) {
   console.log(item);
 });
-
