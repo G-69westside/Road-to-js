@@ -476,6 +476,19 @@
 
 //BrB Sturday Break
 
-document.getElementById("page-banner");
-//This grabs this element
-let banner = document.getElementById("page-banner");
+// document.getElementById("page-banner");
+// //This grabs this element
+// let banner = document.getElementById("page-banner");
+
+let titles = document.getElementsByClassName("title");
+
+//We then turn this variable titles to arrays as ashown below
+
+let arr = Array.from(titles);
+console.log(arr);
+
+//So now arr is now an array
+arr.forEach(function (item) {
+  console.log(item);
+});
+
