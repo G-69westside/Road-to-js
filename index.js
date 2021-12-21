@@ -525,8 +525,11 @@
 
 //Now you can also use arrow Functions to make it shorter;
 //Have a look at it below:
-let book = document.querySelectorAll("#book-list li .name");
+// let book = document.querySelectorAll("#book-list li .name");
 
-book.forEach((books) => {
-  books.textContent = "test";
-});
+// book.forEach((books) => {
+//   books.textContent = "test";
+// });
+const banner = document.querySelector("#page-banner");
+console.log('#page-banner node type is:')
+//continue
