@@ -530,6 +530,13 @@
 // book.forEach((books) => {
 //   books.textContent = "test";
 // });
+
+
+//Now we look at Nodes
 const banner = document.querySelector("#page-banner");
-console.log('#page-banner node type is:')
-//continue
+console.log("#page-banner node type is", banner.nodeType); //This returns the type of node
+console.log("#page-banner node name is", banner.nodeName); // This returns the node name :div ,h1 etc
+console.log("#page-banner has child nodes", banner.hasChildNodes()); // This returns true if a node has child elements otherwise false
+
+const clonedBanner = banner.cloneNode(true); // This clones the whole nodes aswell as the child nodes
+const clonedBanner = banner.cloneNode(false); // This returns the cloned node but no child nodes
