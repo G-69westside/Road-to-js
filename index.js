@@ -531,12 +531,20 @@
 //   books.textContent = "test";
 // });
 
-
 //Now we look at Nodes
-const banner = document.querySelector("#page-banner");
-console.log("#page-banner node type is", banner.nodeType); //This returns the type of node
-console.log("#page-banner node name is", banner.nodeName); // This returns the node name :div ,h1 etc
-console.log("#page-banner has child nodes", banner.hasChildNodes()); // This returns true if a node has child elements otherwise false
+// const banner = document.querySelector("#page-banner");
+// console.log("#page-banner node type is", banner.nodeType); //This returns the type of node
+// console.log("#page-banner node name is", banner.nodeName); // This returns the node name :div ,h1 etc
+// console.log("#page-banner has child nodes", banner.hasChildNodes()); // This returns true if a node has child elements otherwise false
 
-const clonedBanner = banner.cloneNode(true); // This clones the whole nodes aswell as the child nodes
-const clonedBanner = banner.cloneNode(false); // This returns the cloned node but no child nodes
+// const clonedBanner = banner.cloneNode(true); // This clones the whole nodes aswell as the child nodes
+// const clonedBanner = banner.cloneNode(false); // This returns the cloned node but no child nodes
+
+// Now we look at traversing the DOM(part 1)
+const bookList = document.querySelector("#book-list");
+console.log(bookList.parentElement);
+console.log(bookList.parentNode); // This returns the parent node of the current node
+//This above works all the same
+console.log(bookList.parentNode.parentNode); // This returns 2 steps above the hierarchy
+console.log(bookList.childNodes); // This grabs all the nodes including all the line breaks etc
+console.log(bookList.children); //This grabs ONLY the the children nodes and comes as a HTML COLLECTION
