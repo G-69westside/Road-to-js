@@ -518,10 +518,10 @@
 // //This literally grabs the textcontent
 // //As you can see, we have changed variable books to an array but that is not neccessary, we can still work with it without changing into an array since the output will be a nodeList
 
-// const bookList = document.querySelector("#book-list");
-// console.log(bookList.innerHTML);
-// bookList.innerHTML = "<h1>Books and more books</h1>";
-// bookList.innerHTML += "<p>This is how you add HTML </P>";
+//const bookList = document.querySelector("#book-list");
+//console.log(bookList.innerHTML);
+//bookList.innerHTML = "<h1>Books and more books</h1>";
+//bookList.innerHTML += "<p>This is how you add HTML </P>";
 
 //Now you can also use arrow Functions to make it shorter;
 //Have a look at it below:
@@ -541,10 +541,19 @@
 // const clonedBanner = banner.cloneNode(false); // This returns the cloned node but no child nodes
 
 // Now we look at traversing the DOM(part 1)
-const bookList = document.querySelector("#book-list");
-console.log(bookList.parentElement);
-console.log(bookList.parentNode); // This returns the parent node of the current node
-//This above works all the same
-console.log(bookList.parentNode.parentNode); // This returns 2 steps above the hierarchy
-console.log(bookList.childNodes); // This grabs all the nodes including all the line breaks etc
-console.log(bookList.children); //This grabs ONLY the the children nodes and comes as a HTML COLLECTION
+// const bookList = document.querySelector("#book-list");
+// console.log(bookList.parentElement);
+// console.log(bookList.parentNode); // This returns the parent node of the current node
+// //This above works all the same
+// console.log(bookList.parentNode.parentNode); // This returns 2 steps above the hierarchy
+// console.log(bookList.childNodes); // This grabs all the nodes including all the line breaks etc
+// console.log(bookList.children); //This grabs ONLY the the children nodes and comes as a HTML COLLECTION
+
+//Now we lok at traversing the dom element from children to children
+const book = document.querySelector("#book-list");
+console.log(book.nextSibling);
+console.log(book.nextElementSibling); // This ignores all the line breaks
+console.log(book.previousSibling);
+console.log(book.previousElementSibling); // This ignores all the line breaks
+
+book.previousElementSibling.querySelector("p").innerHTML;
