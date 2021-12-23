@@ -557,3 +557,5 @@ console.log(book.previousSibling);
 console.log(book.previousElementSibling); // This ignores all the line breaks
 
 book.previousElementSibling.querySelector("p").innerHTML;
+
+//Thurs Break
