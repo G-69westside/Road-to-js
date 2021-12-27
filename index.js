@@ -563,4 +563,5 @@ book.previousElementSibling.querySelector("p").innerHTML;
 //refactor code
 
 //end lines
-//ES6 tooling
+//ES6 toolings
+//
