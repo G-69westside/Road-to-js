@@ -550,13 +550,13 @@
 // console.log(bookList.children); //This grabs ONLY the the children nodes and comes as a HTML COLLECTION
 
 //Now we lok at traversing the dom element from children to children
-const book = document.querySelector("#book-list");
-console.log(book.nextSibling);
-console.log(book.nextElementSibling); // This ignores all the line breaks
-console.log(book.previousSibling);
-console.log(book.previousElementSibling); // This ignores all the line breaks
+// const book = document.querySelector("#book-list");
+// console.log(book.nextSibling);
+// console.log(book.nextElementSibling); // This ignores all the line breaks
+// console.log(book.previousSibling);
+// console.log(book.previousElementSibling); // This ignores all the line breaks
 
-book.previousElementSibling.querySelector("p").innerHTML;
+// book.previousElementSibling.querySelector("p").innerHTML;
 
 //Thurs Break
 //25th DEC BrB
@@ -570,3 +570,23 @@ book.previousElementSibling.querySelector("p").innerHTML;
 //1st commit 2022
 //continua
 
+// Now we want to work on Event Listener
+// let h2 = document.querySelector("#book-list h2");
+// h2.addEventListener("click", function (e) {
+//   console.log(e.target);
+//   console.log(e);
+// });
+
+let btns = document.querySelectorAll("#book-list .delete");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    btn.parentElement.remove();
+  });
+});
+
+const link = document.querySelector("#page-banner a");
+link.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("navigation to", e.target.textContent, "was prevented!");
+});
