@@ -577,16 +577,20 @@
 //   console.log(e);
 // });
 
-let btns = document.querySelectorAll("#book-list .delete");
+// let btns = document.querySelectorAll("#book-list .delete");
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", function (e) {
-    btn.parentElement.remove();
-  });
-});
+// btns.forEach((btn) => {
+//   btn.addEventListener("click", function (e) {
+//     btn.parentElement.remove();
+//   });
+// });
 
-const link = document.querySelector("#page-banner a");
-link.addEventListener("click", function (e) {
-  e.preventDefault();
-  console.log("navigation to", e.target.textContent, "was prevented!");
-});
+// const link = document.querySelector("#page-banner a");
+// link.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   console.log("navigation to", e.target.textContent, "was prevented!");
+// });
+
+//Event Bubbling
+
+
