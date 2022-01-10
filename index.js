@@ -569,3 +569,4 @@ book.previousElementSibling.querySelector("p").innerHTML;
 //rEFLECTING ON WHAT IVE BEEN ABLE TO ACHIEVE THIS YEAR
 //1st commit 2022
 //continua
+
