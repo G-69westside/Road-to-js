@@ -594,3 +594,7 @@
 //Event Bubbling
 
 
+
+const list  =document.querySelector('#book-list ul')
+list.addEventListener('cl')
+
