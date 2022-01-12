@@ -599,5 +599,4 @@ list.addEventListener("click", function (e) {
     const li = e.target.parentElement;
     li.remove();
   }
-  
 });
