@@ -622,5 +622,11 @@ addForm.addEventListener("submit", function (e) {
   // Append to Document
   newLi.appendChild(newbookName);
   newLi.appendChild(newdeletBtn);
-  list.appendChild(newLi);
+
+  if (value == "") {
+    alert("input book name");
+    return false;
+  } else {
+    list.appendChild(newLi);
+  }
 });
