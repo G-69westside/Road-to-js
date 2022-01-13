@@ -613,7 +613,7 @@ addForm.addEventListener("submit", function (e) {
   const newLi = document.createElement("li");
   const newbookName = document.createElement("span");
   const newdeletBtn = document.createElement("span");
-  // newdeletBtn.classList.add("delete");
+  newdeletBtn.classList.add("delete");
 
   //Add contnent
   newdeletBtn.textContent = "delete";
