@@ -118,7 +118,16 @@ h2 {
   display: block;
   clear: both;
 }
+#add-book #hide {
+  width: 30px;
+}
 
+#add-book label {
+  line-height: 52px;
+}
+.checkbox__input{
+  margin: auto 0;
+}
 /*
 #tabbed-content li{
     display: inline-block;

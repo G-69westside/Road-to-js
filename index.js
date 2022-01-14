@@ -613,7 +613,10 @@ addForm.addEventListener("submit", function (e) {
   const newLi = document.createElement("li");
   const newbookName = document.createElement("span");
   const newdeletBtn = document.createElement("span");
-  newdeletBtn.classList.add("delete");
+
+  // Adding classes to elements
+  newbookName.setAttribute("class", "name");
+  newdeletBtn.setAttribute("class", "delete");
 
   //Add contnent
   newdeletBtn.textContent = "delete";
@@ -628,5 +631,20 @@ addForm.addEventListener("submit", function (e) {
     return false;
   } else {
     list.appendChild(newLi);
+  }
+});
+
+//Changing Attributes
+
+//WE USE setattribute to set classes and id
+
+///Checkboxes and change events
+
+const hideBooks = document.querySelector("#hide");
+hideBooks.addEventListener("change", function (e) {
+  if (hideBooks.checked) {
+    list.style.display = "none";
+  } else {
+    list.style.display = "block";
   }
 });
