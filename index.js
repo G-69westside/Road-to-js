@@ -648,3 +648,5 @@ hideBooks.addEventListener("change", function (e) {
     list.style.display = "block";
   }
 });
+
+// Brb shortly
