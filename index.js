@@ -650,3 +650,40 @@ hideBooks.addEventListener("change", function (e) {
 });
 
 // Brb shortly
+
+//Creating a custom Search filter
+
+// we start by grabbing the reference to the form
+
+// const searchBar = document.forms["search-books"].querySelector("input");
+
+// searchBar.addEventListener("keyup", function (e) {
+//   const term = e.target.value.toLowerCase();
+//   const books = list.getElementsByTagName("li");
+//   Array.from(books).forEach(function (book) {
+//     const title = book.firstElementChild.textContent;
+//     if (title.toLowerCase().indexOf(term) != -1) {
+//       book.style.display = "block";
+//     } else {
+//       book.style.display = "none";
+//     }
+//   });
+// });
+const searchBar = document.forms["search-books"].querySelector("input");
+searchBar.addEventListener("keyup", function (e) {
+  const term = e.target.value.toLowerCase();
+  const books = list.querySelectorAll("li");
+  books.forEach(book => {
+    const title = book.firstElementChild.textContent;
+
+    if (title.toLowerCase().indexOf(term) != -1) {
+      book.style.display = "block";
+    } else {
+      book.style.display = "none";
+    }
+  });
+});
+
+
+
+  
