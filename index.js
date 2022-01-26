@@ -700,3 +700,5 @@ tabs.addEventListener("click", function (e) {
     });
   }
 });
+
+// DOMContentLoaded Event
