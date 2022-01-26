@@ -673,7 +673,7 @@ const searchBar = document.forms["search-books"].querySelector("input");
 searchBar.addEventListener("keyup", function (e) {
   const term = e.target.value.toLowerCase();
   const books = list.querySelectorAll("li");
-  books.forEach(book => {
+  books.forEach((book) => {
     const title = book.firstElementChild.textContent;
 
     if (title.toLowerCase().indexOf(term) != -1) {
@@ -686,4 +686,5 @@ searchBar.addEventListener("keyup", function (e) {
 
 
 
-  
+// Creating tabbed content
+
