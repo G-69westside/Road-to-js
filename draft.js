@@ -176,10 +176,38 @@ const priceRanges = [
 ];
 let restaurants = [{ averagePerPerson: 5 }];
 
-
 const User = {
-name:'Tony',
-age:21,
-interests:[]
+  name: "Tony",
+  age: 21,
+  interests: [],
+};
 
-}
+// const numbers = [3, 4];
+
+// numbers.splice(2, 0, 5, 77);
+// console.log(numbers);
+
+// const numbers = [1, 2, 3, 4, 3];
+
+// console.log(numbers.includes(1));
+
+// let numbers = [1, 2, 3, 4];
+// let another = numbers;
+// // numbers.length = 0;
+// // numbers.splice(0, numbers.length);
+// while (numbers.length > 0) numbers.pop();
+// console.log(numbers);
+
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// const combined = [...first, "a", ...second, "b"];
+// console.log(combined);
+
+const numbers = [1, 2, 3];
+// for (let number of numbers) {
+//   console.log(number);
+// }
+
+const joined = numbers.join();
+console.log(joined);
