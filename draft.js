@@ -223,13 +223,36 @@ const User = {
 // numbers.reverse();
 // console.log(numbers);
 
-const students = [
-  { id: 1, name: "Smith" },
-  { id: 2, name: "Jane" },
-];
-students.sort(function (a, b) {
-  if (a.name < b.name) return -1;
-  if (a.name > b.name) return 1;
-  return 0;
+// const students = [
+//   { id: 1, name: "Smith" },
+//   { id: 2, name: "Jane" },
+// ];
+// students.sort(function (a, b) {
+//   if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+//   if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+//   return 0;
+// });
+
+// console.log(students);
+
+// const numbers = [1, 2, 3];
+// const allPositive = numbers.every(function (value) {
+//   return value >= 0;
+// });
+// console.log(allPositive);
+
+var arr = [];
+while (arr.length < 10000) {
+  var r = Math.floor(Math.random() * 10000) + 1;
+  if (arr.indexOf(r) === -1) arr.push(r);
+}
+//arr.push("b");
+arr.sort();
+console.log(arr);
+
+const allPositive = arr.every(function (value) {
+  return value >= 0;
 });
-console.log(students);
+console.log(allPositive);
+console.log(arr.length);
+ 
