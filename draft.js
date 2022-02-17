@@ -242,13 +242,30 @@ const User = {
 // console.log(allPositive);
 
 let arr = [];
-while (arr.length < 10000) {
-  let randomNo = Math.floor(Math.random() * 10000) + 1;
+while (arr.length < 100) {
+  let randomNo = Math.floor(Math.random() * 100) + 1;
 
   if (arr.indexOf(randomNo) === -1) {
     arr.unshift(randomNo);
   }
 }
+arr.unshift("b");
 
-arr.sort();
-console.log(arr);
+const allPositive = arr.every(function (value) {
+  return value >= 0;
+});
+
+console.log(allPositive);
+
+// const courses = [
+//   { id: 1, name: "Node.js" },
+//   { id: 2, name: "Javascript" },
+// ];
+
+// courses.sort(function (a, b) {
+//   if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+//   if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+//   return 0;
+// });
+
+// console.log(courses);
