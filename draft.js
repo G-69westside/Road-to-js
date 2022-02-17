@@ -241,18 +241,14 @@ const User = {
 // });
 // console.log(allPositive);
 
-var arr = [];
+let arr = [];
 while (arr.length < 10000) {
-  var r = Math.floor(Math.random() * 10000) + 1;
-  if (arr.indexOf(r) === -1) arr.push(r);
+  let randomNo = Math.floor(Math.random() * 10000) + 1;
+
+  if (arr.indexOf(randomNo) === -1) {
+    arr.unshift(randomNo);
+  }
 }
-//arr.push("b");
+
 arr.sort();
 console.log(arr);
-
-const allPositive = arr.every(function (value) {
-  return value >= 0;
-});
-console.log(allPositive);
-console.log(arr.length);
- 
