@@ -241,21 +241,21 @@ const User = {
 // });
 // console.log(allPositive);
 
-let arr = [];
-while (arr.length < 100) {
-  let randomNo = Math.floor(Math.random() * 100) + 1;
+// let arr = [];
+// while (arr.length < 100) {
+//   let randomNo = Math.floor(Math.random() * 100) + 1;
 
-  if (arr.indexOf(randomNo) === -1) {
-    arr.unshift(randomNo);
-  }
-}
-arr.unshift("b");
+//   if (arr.indexOf(randomNo) === -1) {
+//     arr.unshift(randomNo);
+//   }
+// }
+// arr.unshift("b");
 
-const allPositive = arr.every(function (value) {
-  return value >= 0;
-});
+// const allPositive = arr.every(function (value) {
+//   return value >= 0;
+// });
 
-console.log(allPositive);
+// console.log(allPositive);
 
 // const courses = [
 //   { id: 1, name: "Node.js" },
@@ -269,3 +269,52 @@ console.log(allPositive);
 // });
 
 // console.log(courses);
+
+// const numbers = [1, -1, 2, 3];
+// const filtered = numbers.filter((value) => {
+//   return value >= 0;
+// });
+
+// const items = filtered.map((item) => {
+//   const obj = {
+//     name: "Tony",
+//   };
+//   return obj;
+// });
+
+// console.log(items);
+
+// const numbers = [1, -5, 2, 3];
+// const filtered = numbers.filter(function (value) {
+//   return value >= 0;
+// });
+
+// const items = filtered.map(function (n) {
+//   const obj = { value: n };
+//   return obj;
+// });
+// const html = "<ul>" + items.join("") + "</ul>";
+// console.log(items);
+
+// let sum = 0;
+// for (let number of numbers) {
+//   sum = sum + number;
+// }
+
+// const sum = numbers.reduce(function (accumulator, currentValue) {
+//   return accumulator + currentValue;
+// });
+// console.log(sum);
+
+// function arrayFromRange(min, max) {
+//   const output = [];
+//   for (let i = min; i <= max; i++) output.push(i);
+//   return output;
+// }
+// const numbers = arrayFromRange(4, 1);
+// console.log(numbers);
+const numbers = [1, 2, 3, 4];
+function includes(array, searchElement) {
+  for (let element of array) if (element === searchElement) return true;
+  return false;
+}

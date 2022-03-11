@@ -1,2 +1,3 @@
-
-False ==False in [False]
+numbers = range(3)
+output = {*numbers}
+print(output)
