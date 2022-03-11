@@ -313,8 +313,19 @@ const User = {
 // }
 // const numbers = arrayFromRange(4, 1);
 // console.log(numbers);
-const numbers = [1, 2, 3, 4];
-function includes(array, searchElement) {
-  for (let element of array) if (element === searchElement) return true;
-  return false;
+// const numbers = [1, 2, 3, 4];
+// function includes(array, searchElement) {
+//   for (let element of array) if (element === searchElement) return true;
+//  return false;
+// }
+// console.log(includes(numbers, 15));
+
+const numbers = [1, 2, 3, 4, 1, 1, 6];
+function except(array, excluded) {
+  const output = [];
+  for (let element of array)
+    if (excluded.indexOf(element) == -1) output.push(element);
+  return output;
 }
+const output = except(numbers, [1, 2]);
+console.log(output);
