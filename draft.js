@@ -320,12 +320,16 @@ const User = {
 // }
 // console.log(includes(numbers, 15));
 
-const numbers = [1, 2, 3, 4, 1, 1, 6];
-function except(array, excluded) {
-  const output = [];
-  for (let element of array)
-    if (excluded.indexOf(element) == -1) output.push(element);
-  return output;
-}
-const output = except(numbers, [1, 2]);
-console.log(output);
+// const numbers = [1, 2, 3, 4, 1, 1, 6];
+// function except(array, excluded) {
+//   const output = [];
+//   for (let element of array)
+//     if (!excluded.includes(element)) output.push(element);
+//   return output;
+// }
+// const output = except(numbers, [1, 2]);
+// console.log(output);
+
+// // when indexOf a number is -1 , it means the number is not available
+const numbers = [1, 2, 3, 4];
+console.error("Invalid");
