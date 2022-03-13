@@ -333,3 +333,4 @@ const User = {
 // // when indexOf a number is -1 , it means the number is not available
 const numbers = [1, 2, 3, 4];
 console.error("Invalid");
+
