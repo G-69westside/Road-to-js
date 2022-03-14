@@ -355,12 +355,20 @@ const User = {
 // const count = countOccurences(numbers, 1);
 // console.log(count);
 // This is a function Declaration
+// function walk() {
+//   console.log("walk");
+// }
+// let run = function () {
+//   console.log("run");
+// };
+// // We can as well put a function to another variable; have a look:
+// let move = run;
+// move();
+
+//Hoisting
+//Hoisting is the process of moving function declarations to the top of the script file
+// due to hoisting , we are able to run functions before they are declared :eg::
+walk();
 function walk() {
-  console.log("walk");
+  console.log("I am Walking");
 }
-let run = function () {
-  console.log("run");
-};
-// We can as well put a function to another variable; have a look:
-let move = run;
-move();
