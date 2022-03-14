@@ -368,7 +368,17 @@ const User = {
 //Hoisting
 //Hoisting is the process of moving function declarations to the top of the script file
 // due to hoisting , we are able to run functions before they are declared :eg::
-walk();
-function walk() {
-  console.log("I am Walking");
+// walk();
+// function walk() {
+//   console.log("I am Walking");
+// }
+
+// Working on arguments operator
+//We can use all arguments instead of the specified arguments in a function
+//EG:
+function sum() {
+  let total = 0;
+  for (let value of arguments) total = total + value;
+  return total;
 }
+console.log(sum(1, 2, 3, 4, 5, 10));
