@@ -346,11 +346,21 @@ const User = {
 // }
 // const output = move(numbers, 0, -3);
 // console.log(output);
-const numbers = [1, 2, 3, 4];
-function countOccurences(array, searchElement) {
-  let count = 0;
-  for (let element of array) if (element === searchElement) count++;
-  return count;
+// const numbers = [1, 2, 3, 4];
+// function countOccurences(array, searchElement) {
+//   let count = 0;
+//   for (let element of array) if (element === searchElement) count++;
+//   return count;
+// }
+// const count = countOccurences(numbers, 1);
+// console.log(count);
+// This is a function Declaration
+function walk() {
+  console.log("walk");
 }
-const count = countOccurences(numbers, 1);
-console.log(count)
+let run = function () {
+  console.log("run");
+};
+// We can as well put a function to another variable; have a look:
+let move = run;
+move();
