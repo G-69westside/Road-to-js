@@ -376,9 +376,18 @@ const User = {
 // Working on arguments operator
 //We can use all arguments instead of the specified arguments in a function
 //EG:
-function sum() {
-  let total = 0;
-  for (let value of arguments) total = total + value;
-  return total;
+// function sum() {
+//   let total = 0;
+//   for (let value of arguments) total = total + value;
+//   return total;
+// }
+// console.log(sum(1, 2, 3, 4, 5, 10));
+
+//074354
+function sum(discount, ...prices) {
+  const total = prices.reduce(function (a, b) {
+    return a + b;
+  });
+  return total * (1 - discount);
 }
-console.log(sum(1, 2, 3, 4, 5, 10));
+console.log(sum(0.1, 20, 30));
