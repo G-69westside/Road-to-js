@@ -392,7 +392,6 @@ const User = {
 // }
 // console.log(sum(0.1, 20, 30));
 
-
 // DEFAULT PARAMETERS
 function interest(principle, rate, years) {
   rate = rate || 3.5;
@@ -400,3 +399,9 @@ function interest(principle, rate, years) {
   return ((principle * rate) / 100) * years;
 }
 console.log(interest(10000));
+
+// or
+function interest1(principle, rate = 3.5, years = 5) {
+  return ((principle * rate) / 100) * years;
+}
+console.log(interest1(10000));
