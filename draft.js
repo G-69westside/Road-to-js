@@ -384,10 +384,19 @@ const User = {
 // console.log(sum(1, 2, 3, 4, 5, 10));
 
 //074354
-function sum(discount, ...prices) {
-  const total = prices.reduce(function (a, b) {
-    return a + b;
-  });
-  return total * (1 - discount);
+// function sum(discount, ...prices) {
+//   const total = prices.reduce(function (a, b) {
+//     return a + b;
+//   });
+//   return total * (1 - discount);
+// }
+// console.log(sum(0.1, 20, 30));
+
+
+// DEFAULT PARAMETERS
+function interest(principle, rate, years) {
+  rate = rate || 3.5;
+  years = years || 5;
+  return ((principle * rate) / 100) * years;
 }
-console.log(sum(0.1, 20, 30));
+console.log(interest(10000));
