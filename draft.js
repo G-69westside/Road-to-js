@@ -393,15 +393,38 @@ const User = {
 // console.log(sum(0.1, 20, 30));
 
 // DEFAULT PARAMETERS
-function interest(principle, rate, years) {
-  rate = rate || 3.5;
-  years = years || 5;
-  return ((principle * rate) / 100) * years;
-}
-console.log(interest(10000));
+// function interest(principle, rate, years) {
+//   rate = rate || 3.5;
+//   years = years || 5;
+//   return ((principle * rate) / 100) * years;
+// }
+// console.log(interest(10000));
 
-// or
-function interest1(principle, rate = 3.5, years = 5) {
-  return ((principle * rate) / 100) * years;
+// // or
+// function interest1(principle, rate = 3.5, years = 5) {
+//   return ((principle * rate) / 100) * years;
+// }
+// console.log(interest1(10000));
+
+//Getters and Setters
+const person = {
+  firstName: "Tony",
+  lastName: "Maluki",
+  get fullName() {
+    return `${person.firstName} ${person.lastName}`;
+  },
+  set fullName(value) {
+    if (typeof value !== "string") throw new Error("Value is not a string");
+    const parts = value.split(" ");
+    if (parts.length !== 2) throw new Error("Enter a first and last name");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+try {
+  person.fullName = null;
+} catch (e) {
+  alert(e);
 }
-console.log(interest1(10000));
+
+console.log(person);
